@@ -3,18 +3,25 @@ server:
 
 spring:
   application:
-    name: Cloud_payment-service
-
+    name: cloud-payment-service
   datasource:
     #当前数据源操作类型
     type: com.alibaba.druid.pool.DruidDataSource
     #mysql驱动包
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/cloud2020?useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: root
-    password: 123456
+    url: jdbc:mysql://192.168.6.11:3306/cloud2020?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: ubuntu
+    password: 123
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   #所有entity别名类所在包
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: entities
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+#      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
