@@ -15,5 +15,8 @@
         <module name="cloud-consumer-order80" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-provider-payment8001 (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
