@@ -1,7 +1,7 @@
 package com.atguigu.springcloud.controller;
 
-import entities.CommonResult;
-import entities.Payment;
+import com.atguigu.springcloud.entities.CommonResult;
+import com.atguigu.springcloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +14,8 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
 
-    public static final String PAYMENT_URL = "http://192.168.6.11:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+//    public static final String PAYMENT_URL = "http://192.168.6.11:8001";
 
     @Resource
     private RestTemplate restTemplate;
