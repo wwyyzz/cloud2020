@@ -18,11 +18,14 @@
         <module name="cloud-provider-payment8002" />
         <module name="cloud-provider-payment8001" />
         <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-stream-rabbitmq-provider8801" />
+        <module name="cloud-stream-rabbitmq-comsumer8802" />
         <module name="cloud-providerconsul-order8060" />
         <module name="cloud-consumerzk-order8080" />
         <module name="cloud-providerconsul-payment8006" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloud-consumer-feign-order80" />
+        <module name="cloud-config-client-3366" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
