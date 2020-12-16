@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class StreamMQMain8802 {
+public class PaymentMain9001 {
     public static void main(String[] args) {
-        SpringApplication.run(StreamMQMain8802.class,args);
+        SpringApplication.run(PaymentMain9001.class,args);
     }
 }
