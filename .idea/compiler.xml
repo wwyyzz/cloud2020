@@ -20,6 +20,7 @@
         <module name="cloud-provider-payment8001" />
         <module name="cloud-ali-provider-payment9002" />
         <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="ckoud-ali-sentinel-service8401" />
         <module name="cloud-stream-rabbitmq-provider8801" />
         <module name="cloud-stream-rabbitmq-comsumer8802" />
         <module name="cloud-providerconsul-order8060" />
